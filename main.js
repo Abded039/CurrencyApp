@@ -73,6 +73,12 @@ document.querySelector(".inputAmount").addEventListener("input", (e) => {
 });
 
 arrows.addEventListener("click", () => {
+  let amount = document.querySelector(".inputAmount");
+  amount.value = "";
+  document.querySelector(".baseRate").innerHTML = "";
+  document.querySelector(".convertedRate").innerHTML = "Enter Amount";
+  document.querySelector(".baseSpan").innerHTML = "";
+  document.querySelector(".rateSpan").innerHTML = "";
   let stock;
   stock = fromSelect.value;
   fromSelect.value = toSelect.value;
